@@ -5,7 +5,7 @@ import CommonBtn from './CommonBtn'
 
 const Nav = () => {
     return (
-        <nav className='py-1'>
+        <nav className='py-1 position-absolute top-0 w-100'>
             <div className='container py-3 d-flex justify-content-between align-items-center'>
                 <Link href={"/"}><Logo /></Link>
                 <div className='d-flex'>
