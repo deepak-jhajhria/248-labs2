@@ -14,57 +14,85 @@ html {
 }
 
 :root {
-  --fs-h1: 72px;
-  --fs-h2: 52px;
-  --fs-h3: 40px;
-  --fs-h4: 32px;
+  --fs-h1: 42px;
+  --fs-h2: 38px;
+  --fs-h3: 32px;
+  --fs-h4: 28px;
   --fs-h5: 24px;
   --fs-h6: 20px;
-  --fs-p: 16px;
-  --lh-h1: 86px;
+  --fs-p: 14px;
+  --fs-lg: 16px;
+  --lh-h1: 46px;
   --lh-h2: 62px;
   --lh-h4: 38px;
   --lh-p: 24px;
-  --Res-100: 100px
+  --Res-100: 30px;
+  --Res-162: 82px;
+  --Res-50: 20px;
+  --Res-140: 70px;
 }
 
 h1 {
   font-size: var(--fs-h1) !important;
-  font-weight: 700;
-  line-height: var(--lh-h1);
+  font-weight: 700 !important;
+  line-height: var(--lh-h1) !important;
 }
 
 h2 {
   font-size: var(--fs-h2) !important;
-  font-weight: 700;
-  line-height: var(--lh-h2);
+  font-weight: 700 !important;
+  line-height: var(--lh-h2) !important;
 }
 
 h4 {
   font-size: var(--fs-h4) !important;
-  font-weight: 700;
-  line-height: var(--lh-h4);
+  font-weight: 700 !important;
+  line-height: var(--lh-h4) !important;
 }
 
 p {
   font-size: var(--fs-p) !important;
   font-weight: 400;
   line-height: var(--lh-p);
+  color: white;
+  opacity: 0.70;
+}
+
+.text-lg {
+  font-size: var(--fs-lg) !important;
+}
+
+.z-110 {
+  z-index: 110 !important;
 }
 
 .commonBtn {
   background: linear-gradient(151.6deg, #D4145A 1.85%, #FBB03B 98.12%);
+  font-size: var(--fs-p);
+  font-weight: 500;
+}
+
+.bg-GradientBtn {
+  background: linear-gradient(151.6deg, rgba(212, 20, 90, 0.2) 1.85%, rgba(251, 176, 59, 0.2) 98.12%);
 }
 
 .primaryBtn {
-
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 19px;
+  padding-right: 19px;
   background: linear-gradient(151.6deg, #D4145A 1.85%, #FBB03B 98.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .bgHeader {
-  min-height: 810px;
+  min-height: 510px;
   background-image: url(/assets/images/headerbg.png);
+}
 
+.overflow-x-clip {
+  overflow-x: clip;
 }
 
 /* navBar Css  */
@@ -74,9 +102,19 @@ li a {
   font-size: 20px;
 }
 
+.NavLogo {
+  width: 110px;
+  height: 33px;
+}
+
 /* hero section  */
 .max-w-873 {
   max-width: 873px !important;
+}
+
+.scrollDownIcon {
+  width: 55px;
+  height: 30px;
 }
 
 /* Twich Slider  */
@@ -122,11 +160,15 @@ li a {
 }
 
 /* first game  */
-.pt-121 {
-  padding-top: 121px;
+.pt-162 {
+  padding-top: var(--Res-162);
 }
 
-.about-h {
+.pt-50 {
+  padding-top: var(--Res-50);
+}
+
+.aboutLogo {
   opacity: 6%;
   top: 4px;
   right: -4%;
@@ -152,9 +194,6 @@ li a {
   max-width: 310px;
 }
 
-.pt-50 {
-  padding-top: 50px;
-}
 
 .max-w-512 {
   max-width: 512px;
@@ -183,19 +222,13 @@ li a {
 
 }
 
-
-
-.elipscrd::before {
-  content: "";
+.elipscrd {
+  width: 347px;
   position: absolute;
   background: linear-gradient(151.6deg, #D4145A 1.85%, #FBB03B 98.12%);
-  bottom: 0;
-  width: 347px;
   height: 116px;
   border-radius: 100%;
   filter: blur(50px);
-  bottom: -35%;
-
 }
 
 .pb-131 {
@@ -204,4 +237,269 @@ li a {
 
 .pt-49 {
   padding-top: 49px;
+}
+
+.max-w-470 {
+  max-width: 470px;
+}
+
+.roadmap::after {
+  position: absolute;
+  content: "";
+  display: flex;
+  top: 0;
+  left: 50%;
+  clear: both;
+  height: 100%;
+  width: 1px;
+  border: 1px solid;
+  background: linear-gradient(90deg, #EC7646 1.56%, rgba(255, 255, 255, 0) 94.87%);
+}
+
+.roadmapItems {
+  padding-top: 80px;
+  margin-top: 70px;
+}
+
+.roadmapCard {
+  background: linear-gradient(151.6deg, #D4145A 1.85%, #FBB03B 98.12%);
+}
+
+.pt-140 {
+  padding-top: var(--Res-140);
+}
+
+.-end-100 {
+  right: -100%;
+}
+
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.px-32 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* widths */
+.max-w-310 {
+  max-width: 310px;
+}
+
+/* cards */
+.LevelBody {
+  background-image: url(/assets/images/levelupImg.png);
+}
+
+.py-221 {
+  padding-top: 221px;
+  padding-bottom: 221px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.LevelCard {
+  max-width: 571px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  padding-left: 36px;
+  padding-right: 36px;
+  backdrop-filter: blur(20px) !important;
+  border-radius: 30px;
+}
+
+.memberImg {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.memberCard {
+  z-index: 1;
+  min-height: 360px;
+  border-radius: 30px;
+  background: #0d0d0d;
+}
+
+.memberCard:hover .ellipesourtem {
+  opacity: 1;
+}
+
+/* background text */
+.CEO_clr {
+  background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ellipse */
+.behind_card:hover .ellipesourtem {
+  opacity: 1;
+}
+
+.ellipesourtem {
+  position: absolute;
+  bottom: -122px;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+  max-height: 156px;
+  z-index: -1;
+  filter: blur(75px);
+  background: linear-gradient(151.6deg, #d4145a 1.85%, #fbb03b 98.12%);
+}
+
+/* form */
+.registration-form {
+  max-width: 726px;
+  filter: blur(90%);
+  backdrop-filter: blur(16px);
+  margin: 0 auto;
+  padding: 20px !important;
+  border: 2px solid;
+  border-image-source: linear-gradient(231.49deg, rgba(255, 255, 255, 0) -0.51%, rgba(218, 43, 85, 0.3479) 83.2%);
+  border-image-slice: 1;
+  border-radius: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="mail"] {
+  width: 270px;
+  padding: 10px;
+  max-width: 100%;
+  padding: 20px 12px 20px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: transparent;
+}
+
+input {
+  width: 310px !important;
+  font-size: var(--fs-xs) !important;
+  color: var(--grey) !important;
+  font-weight: 400 !important;
+}
+
+.error {
+  border-color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: 2px solid;
+  border-image-source: linear-gradient(231.49deg,
+      rgba(255, 255, 255, 0) -0.51%,
+      rgba(218, 43, 85, 0.3479) 83.2%);
+  border-image-slice: 1;
+  padding: 20px;
+
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.success-popup p {
+  margin-bottom: 10px;
+}
+
+.success-popup button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.success-popup button:hover {
+  background-color: #4e6e91;
+}
+
+.form_bg {
+  /* background-image: url('./assets/images/png/form_bg.png'); */
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* positions */
+.rich-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 556px) {
+  :root {
+    --fs-h1: 72px;
+    --fs-h2: 52px;
+    --fs-h3: 40px;
+    --fs-h4: 32px;
+    --fs-h5: 24px;
+    --fs-h6: 20px;
+    --fs-p: 16px;
+    --fs-l8: 16px;
+    --lh-h1: 86px;
+    --lh-h2: 62px;
+    --lh-h4: 38px;
+    --lh-p: 24px;
+    --Res-100: 100px;
+    --Res-162: 162px;
+    --Res-50: 30px;
+    --Res-140: 140px;
+  }
+
+  .NavLogo {
+    width: 207px;
+    height: 43px;
+  }
+
+  .bgHeader {
+    min-height: 810px;
+  }
+
+  .scrollDownIcon {
+    width: 95px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 992px) {
+  .mobileview {
+    position: fixed;
+    top: 0;
+    background: #1B0D26;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 3;
+    transition: all .3s linear;
+  }
 }

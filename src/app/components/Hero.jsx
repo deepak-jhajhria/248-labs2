@@ -9,10 +9,10 @@ const Hero = () => {
             <div className='container d-flex align-items-center max-w-873 flex-grow-1'>
                 <div className='d-flex flex-column align-items-center'>
                     <h1 className='text-white text-center m-0'>Changing the way games are made</h1>
-                    <p className='text-white mt-3 mb-0'>Redefining the future of play</p>
+                    <p className='text-white mt-2 mt-sm-3 mb-0'>Redefining the future of play</p>
                 </div>
             </div>
-            <Image className=' position-absolute bottom-0 start-50 translate-middle-x' src={btn} alt='image' width={95} height={50} />
+            <Image className=' position-absolute bottom-0 start-50 translate-middle-x scrollDownIcon' src={btn} alt='image' width={95} height={50} />
         </div>
     )
 }

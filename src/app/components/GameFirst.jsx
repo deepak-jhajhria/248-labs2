@@ -8,8 +8,8 @@ const GameFirst = () => {
     { heading: "Art and Sound", para: "In the realm of game design, art and animation are the storytellers, whispering tales of wonder and excitement, etching memories that linger long after the controller is set down." },
   ]
   return (
-    <div className='pt-121 bg-black mt1 position-relative overflow-hidden'>
-      <h2 className=' fs-xxl fw-bold roboto-flex position-absolute about-h text-white z-n1 '>About Us</h2>
+    <div className='bg-black position-relative overflow-hidden pt-162'>
+      <h2 className='position-absolute aboutLogo text-white z-n1 '>About Us</h2>
       <div className='container'>
         <div className="row pb-114">
           <div className="col-lg-6">
@@ -19,7 +19,7 @@ const GameFirst = () => {
             <h2 className='text-white max-w-310'>Game First.Always.</h2>
           </div>
           <div className='col-lg-6 pt-50 ps-lg-5 ps-3'>
-            <h4 className='text-white m-0 mb-2 pb-1'>This is difficult</h4>
+            <p className='text-white text-lg opacity-100 m-0 mb-2 pb-1'>This is difficult</p>
             <p className='max-w-512 text-white opacity-75'>Web3 Games have a notoriously high barrier-to-entry for casual gamers who make up the vast majority of players. “Link your wallet” before gameplay is not just off-putting, it’s boring. We’re solving that with <span className=' fw-semibold '>world-class storytelling,</span> world-building, game design, art and sound. And fun.</p>
           </div>
         </div>

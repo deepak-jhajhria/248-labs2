@@ -2,9 +2,11 @@ import React from 'react'
 
 const PrimaryBtn = (props) => {
   return (
-    <button className={`primaryBtn text-white fw-bold rounded-pill py-3 px-5 border-0 ${props.cstm}`}>
+    <div className='bg-GradientBtn rounded-pill d-inline-block'>
+      <button className={`primaryBtn  text-white fw-bold rounded-pill border-0 position-relative overflow-hidden  ${props.cstm}`}>
         {props.name}
-    </button>
+      </button>
+    </div>
   )
 }
 
